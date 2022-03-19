@@ -1,0 +1,33 @@
+﻿body {
+}
+
+.mdl-float-button {
+position:fixed;
+right:10px;
+bottom:10px;
+}
+
+.scale-zero{
+transform: scale(0,0);
+transition: all 0.1s linear;
+}
+
+.scale-one{
+transform: scale(1,1);
+transition: all 0.1s linear;
+}
+
+.translate-down {
+transform: translate(0,120%);
+transition: all 0.1s linear;
+}
+
+.translate-up {
+transform: translate(0,0);
+transition: all 0.1s linear;
+}
+
+.rotate {
+transform:rotate(45deg);  
+transition: all 0.1s linear;  
+}

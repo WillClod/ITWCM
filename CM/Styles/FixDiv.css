@@ -1,0 +1,18 @@
+﻿.divHeader
+{
+    overflow-y:auto;
+    overflow-x:hidden;                                             
+}
+.divBody
+{
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+.divFooter{
+    height: 20px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
