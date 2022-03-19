@@ -32,7 +32,7 @@
 <body>
     <form id="form1" runat="server">
 
-    <!-- Header -->
+    <!-- Header. -->
     <div id="divHeader" style="margin-bottom: 10px" >
         <div id="divHeader-Buttons">
             <div style="float: left">
