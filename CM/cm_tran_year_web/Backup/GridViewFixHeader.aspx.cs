@@ -11,8 +11,6 @@ namespace CM.cm_tran_year_web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            /*
             DateTime vldFirstDay = new DateTime(2019, 11, 1); //DateTime.MinValue;
             DateTime vldLastDay = new DateTime(2019, 11, 30);  //DateTime.MinValue;
 
@@ -21,7 +19,6 @@ namespace CM.cm_tran_year_web
             srcCMTranTypeYear.SelectParameters["to_apply_date"].DefaultValue = vldLastDay.ToString();
             srcCMTranTypeYear.SelectParameters["post_flag"].DefaultValue = false.ToString();
             srcCMTranTypeYear.SelectParameters["tran_type"].DefaultValue = "*";
-            */
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -33,11 +30,6 @@ namespace CM.cm_tran_year_web
                     e.Row.Style.Add("margin", "100px");
             }
             */
-        }
-
-        protected void gvwCMTranBatch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

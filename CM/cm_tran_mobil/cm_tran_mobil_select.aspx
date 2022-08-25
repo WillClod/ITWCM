@@ -9,26 +9,28 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="..\Styles\FloatButton.css"/>
- </head>
- <script type="text/javascript" src="..\Scripts\FloatButton.js"></script>
- <script type="text/javascript" lang="javascript" >
-     function EventSelectedDate(sender, args) {         
+</head>
+
+    <script type="text/javascript" src="..\Scripts\FloatButton.js"></script>
+    <script type="text/javascript" lang="javascript" >
+        function EventSelectedDate(sender, args) {
          //var txtClientID = '<%= txtDate.ClientID %>';
-         //__doPostBack("DateSelected", document.getElementById(txtClientID).value);
+            //__doPostBack("DateSelected", document.getElementById(txtClientID).value);
 
-         var vldSelectedDate = sender._selectedDate;
+            var vldSelectedDate = sender._selectedDate;
 
-         var vlsSelectedDate =
-                   vldSelectedDate.getFullYear() +
-             "/" + ("0" + (vldSelectedDate.getMonth() + 1)).slice(-2) +
-             "/" + ("0" + vldSelectedDate.getDate()).slice(-2) +
-             " " + ("0" + vldSelectedDate.getHours()).slice(-2) +
-             ":" + ("0" + vldSelectedDate.getMinutes()).slice(-2);
+            var vlsSelectedDate =
+                vldSelectedDate.getFullYear() +
+                "/" + ("0" + (vldSelectedDate.getMonth() + 1)).slice(-2) +
+                "/" + ("0" + vldSelectedDate.getDate()).slice(-2) +
+                " " + ("0" + vldSelectedDate.getHours()).slice(-2) +
+                ":" + ("0" + vldSelectedDate.getMinutes()).slice(-2);
 
-         __doPostBack("DateSelected", vlsSelectedDate);
+            __doPostBack("DateSelected", vlsSelectedDate);
 
-     }
- </script>
+        }
+    </script>
+
 <body>
     <form id="form1" runat="server">
 

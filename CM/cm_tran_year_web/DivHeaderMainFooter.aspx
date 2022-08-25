@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title></title>
+
     <style type="text/css">
 
 html,
@@ -35,7 +37,7 @@ body {
 
     </style>
 
-     <script type="text/javascript" lang="javascript">
+    <script type="text/javascript" lang="javascript">
 
          function Mensaje() {
              headerx.clientHeight = 100;
@@ -56,7 +58,7 @@ body {
 	        </div>
 
 	        <div id="body" style="border: thin solid #0000FF">
-<p>ksdjfksdj sdfopskdpf[
+                    <p>ksdjfksdj sdfopskdpf[
                     ;skdflkdsl;  [psdlfpldspf podskfods 
                     lksdmjfkjsdf  sdpokfosdkjfpk
                     s;odkfo;ksdof spo[dkfosdkopfmksdf lkjgtklfjdgkjfdklg  potekroktoprekptokopekotkertk erpotkpoerkt ret opermte t ert ert mpertomeromtore ter\

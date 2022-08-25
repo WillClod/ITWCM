@@ -17,17 +17,17 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-var GridViewScrollOptions = /** @class */ (function () {
+var GridViewScrollOptions = (function () {
     function GridViewScrollOptions() {
     }
     return GridViewScrollOptions;
 }());
-var GridViewScrollScrollPosition = /** @class */ (function () {
+var GridViewScrollScrollPosition = (function () {
     function GridViewScrollScrollPosition() {
     }
     return GridViewScrollScrollPosition;
 }());
-var GridViewScroll = /** @class */ (function () {
+var GridViewScroll = (function () {
     function GridViewScroll(options) {
         this._initialized = false;
         if (options.elementID == null)

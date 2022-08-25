@@ -73,6 +73,7 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="CMTranYear\CMTranYearListGrp_Desk.aspx" />
     <Content Include="cm_tran_mobil\cm_tran_mobil_entry.aspx" />
     <Content Include="cm_tran_mobil\cm_tran_mobil_select.aspx" />
     <Content Include="cm_tran_mobil\WebForm2.aspx" />
@@ -80,6 +81,7 @@
     <Content Include="cm_tran_year_web\cm_tran_year_web_select.aspx" />
     <Content Include="cm_tran_year_web\DivHeaderMainFooter.aspx" />
     <Content Include="cm_tran_year_web\GridViewFixHeader.aspx" />
+    <Content Include="cm_tran_year_web\GridViewFreezeColumnRow.html" />
     <Content Include="cm_tran_year_web\HtmlPage1.html" />
     <Content Include="cm_tran_year_web\WebForm1.aspx" />
     <Content Include="Images\1346353503_notification_warning.png" />
@@ -104,6 +106,7 @@
     <Content Include="Images\Cancel16.png" />
     <Content Include="Images\cmtrantype\AGUA.png" />
     <Content Include="Images\cmtrantype\CABLE.png" />
+    <Content Include="Images\cmtrantype\CARNE.png" />
     <Content Include="Images\cmtrantype\CELULARES.png" />
     <Content Include="Images\cmtrantype\COLEGIAT.png" />
     <Content Include="Images\cmtrantype\COMIDA.png" />
@@ -112,14 +115,17 @@
     <Content Include="Images\cmtrantype\GAS.png" />
     <Content Include="Images\cmtrantype\GASOLINA.png" />
     <Content Include="Images\cmtrantype\GASTOPER.png" />
+    <Content Include="Images\cmtrantype\GIMNASIO.png" />
     <Content Include="Images\cmtrantype\HIPOTECA.png" />
     <Content Include="Images\cmtrantype\INSCRIPCIO.png" />
     <Content Include="Images\cmtrantype\LUZ.png" />
+    <Content Include="Images\cmtrantype\MUSIC.png" />
     <Content Include="Images\Delete.png" />
     <Content Include="Images\Discount.png" />
     <Content Include="Images\Expense.png" />
     <Content Include="Images\ExpenseIcon.png" />
     <Content Include="Images\ExpenseIconDIS.png" />
+    <Content Include="Images\IconDeleteCancel16.png" />
     <Content Include="Images\Next48.png" />
     <Content Include="Images\note.png" />
     <Content Include="Images\Past48.png" />
@@ -185,6 +191,13 @@
     </Compile>
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CMTranYear\CMTranYearListGrp_Desk.aspx.cs">
+      <DependentUpon>CMTranYearListGrp_Desk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CMTranYear\CMTranYearListGrp_Desk.aspx.designer.cs">
+      <DependentUpon>CMTranYearListGrp_Desk.aspx</DependentUpon>
     </Compile>
     <Compile Include="cm_tran_mobil\cm_tran_mobil_entry.aspx.cs">
       <DependentUpon>cm_tran_mobil_entry.aspx</DependentUpon>
@@ -270,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Smarter ASP Net.pubxml" />
+    <Content Include="Styles\web.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

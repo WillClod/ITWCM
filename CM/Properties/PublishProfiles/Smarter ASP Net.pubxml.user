@@ -6,8 +6,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzHA20uO0oEulW9SU3g8oqQAAAAACAAAAAAADZgAAwAAAABAAAACc0/06JlTtlUVSNvhxoCKxAAAAAASAAACgAAAAEAAAAAa+5HQu4FFaOX8/sGno9/wYAAAAiHHHqQ1Z/fTh5Tv23M2gFh6gFpzcFzmDFAAAAG0wGd/5SdtjS6PDIDZ9g201U8Oc</EncryptedPassword>
-    <_PublishTargetUrl>ftp://FTP.SITE4NOW.NET/intelyware</_PublishTargetUrl>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj1aqJUVoVkugDf7Qk7KrowAAAAACAAAAAAAQZgAAAAEAACAAAACexBb4H0uQu5sK0C3zUiYQqFy+Mb5/jEQUUwCwEIVVswAAAAAOgAAAAAIAACAAAAAW2fU2JnYKaXMkkyDPg3mIbpfua1FqV5FuotwK3qEjVCAAAAA3aHAFNn7jsjJnTLkW89eoMYBjnnYqsAMEBYdwI55o00AAAABd45KyzCyqlivkSv5hmX/0ZKdWAXEPrdx69bB66OKzeJ27+82FB1k+40NonqphE6j4fFK3H0dwdPf/ZvfNrDp3</EncryptedPassword>
+    <_PublishTargetUrl>ftp://win5048.site4now.net/intelyware</_PublishTargetUrl>
+    <History>True|2022-08-20T02:22:58.0463408Z;False|2022-08-19T21:21:30.5785665-05:00;True|2022-08-19T18:56:40.7607496-05:00;True|2022-08-02T16:49:32.8054670-05:00;True|2022-08-02T09:50:27.3979266-05:00;True|2022-08-01T20:33:15.7385084-05:00;True|2022-07-31T15:17:52.0224039-05:00;True|2022-07-09T21:02:46.7793983-05:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="About.aspx">
@@ -32,28 +33,37 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/01/2017 21:49:52</publishTime>
     </File>
     <File Include="bin/CM.dll">
-      <publishTime>03/03/2020 14:16:52</publishTime>
+      <publishTime>08/21/2022 08:41:07</publishTime>
+    </File>
+    <File Include="bin/CM.pdb">
+      <publishTime>08/21/2022 08:41:07</publishTime>
+    </File>
+    <File Include="CMTranYear/CMTranYearListGrp_Desk.aspx">
+      <publishTime>08/21/2022 07:44:08</publishTime>
     </File>
     <File Include="cm_tran_mobil/cm_tran_mobil_entry.aspx">
       <publishTime>03/03/2020 14:15:55</publishTime>
     </File>
     <File Include="cm_tran_mobil/cm_tran_mobil_select.aspx">
-      <publishTime>03/03/2020 11:50:17</publishTime>
+      <publishTime>08/20/2022 17:31:05</publishTime>
     </File>
     <File Include="cm_tran_mobil/WebForm2.aspx">
       <publishTime>11/14/2019 13:44:07</publishTime>
     </File>
     <File Include="cm_tran_year_web/cm_tran_year_web_detail.ascx">
-      <publishTime>11/28/2019 11:00:41</publishTime>
+      <publishTime>03/19/2022 16:20:43</publishTime>
     </File>
     <File Include="cm_tran_year_web/cm_tran_year_web_select.aspx">
-      <publishTime>02/07/2020 11:49:20</publishTime>
+      <publishTime>07/30/2022 15:39:22</publishTime>
     </File>
     <File Include="cm_tran_year_web/DivHeaderMainFooter.aspx">
-      <publishTime>11/14/2019 12:50:30</publishTime>
+      <publishTime>07/30/2022 17:56:13</publishTime>
     </File>
     <File Include="cm_tran_year_web/GridViewFixHeader.aspx">
-      <publishTime>11/13/2019 19:02:39</publishTime>
+      <publishTime>07/31/2022 08:39:30</publishTime>
+    </File>
+    <File Include="cm_tran_year_web/GridViewFreezeColumnRow.html">
+      <publishTime>07/30/2022 18:20:52</publishTime>
     </File>
     <File Include="cm_tran_year_web/HtmlPage1.html">
       <publishTime>11/14/2019 13:32:51</publishTime>
@@ -89,7 +99,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/25/2019 17:26:15</publishTime>
     </File>
     <File Include="Images/Add.png">
-      <publishTime>11/05/2019 07:41:34</publishTime>
+      <publishTime>05/11/2019 07:41:34</publishTime>
     </File>
     <File Include="Images/Back.png">
       <publishTime>03/01/2017 21:49:52</publishTime>
@@ -139,14 +149,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/cmtrantype/CABLE.png">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="Images/cmtrantype/CARNE.png">
+      <publishTime>08/20/2022 12:32:52</publishTime>
+    </File>
     <File Include="Images/cmtrantype/CELULARES.png">
-      <publishTime>11/22/2019 10:15:43</publishTime>
+      <publishTime>07/16/2022 10:22:31</publishTime>
     </File>
     <File Include="Images/cmtrantype/COLEGIAT.png">
-      <publishTime>11/22/2019 10:21:17</publishTime>
+      <publishTime>08/20/2022 14:36:56</publishTime>
     </File>
     <File Include="Images/cmtrantype/COMIDA.png">
-      <publishTime>11/22/2019 10:26:48</publishTime>
+      <publishTime>07/16/2022 10:26:53</publishTime>
     </File>
     <File Include="Images/cmtrantype/COMTNDA.png">
       <publishTime>11/22/2019 10:30:13</publishTime>
@@ -155,22 +168,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/22/2019 10:28:57</publishTime>
     </File>
     <File Include="Images/cmtrantype/GAS.png">
-      <publishTime>11/22/2019 10:58:16</publishTime>
+      <publishTime>08/20/2022 14:32:57</publishTime>
     </File>
     <File Include="Images/cmtrantype/GASOLINA.png">
-      <publishTime>11/22/2019 10:18:16</publishTime>
+      <publishTime>08/20/2022 14:42:09</publishTime>
     </File>
     <File Include="Images/cmtrantype/GASTOPER.png">
       <publishTime>11/22/2019 10:53:03</publishTime>
+    </File>
+    <File Include="Images/cmtrantype/GIMNASIO.png">
+      <publishTime>07/16/2022 09:52:11</publishTime>
     </File>
     <File Include="Images/cmtrantype/HIPOTECA.png">
       <publishTime>11/22/2019 10:08:38</publishTime>
     </File>
     <File Include="Images/cmtrantype/INSCRIPCIO.png">
-      <publishTime>11/22/2019 10:21:17</publishTime>
+      <publishTime>08/20/2022 14:36:56</publishTime>
     </File>
     <File Include="Images/cmtrantype/LUZ.png">
       <publishTime>11/22/2019 07:33:32</publishTime>
+    </File>
+    <File Include="Images/cmtrantype/MUSIC.png">
+      <publishTime>07/15/2022 18:17:14</publishTime>
     </File>
     <File Include="Images/Delete.png">
       <publishTime>03/01/2017 21:49:52</publishTime>
@@ -186,6 +205,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Images/ExpenseIconDIS.png">
       <publishTime>10/23/2019 17:07:47</publishTime>
+    </File>
+    <File Include="Images/IconDeleteCancel16.png">
+      <publishTime>01/30/2020 13:18:44</publishTime>
     </File>
     <File Include="Images/Next48.png">
       <publishTime>10/27/2019 14:02:08</publishTime>
@@ -236,10 +258,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>10/23/2019 17:09:24</publishTime>
     </File>
     <File Include="Scripts/FixDiv.js">
-      <publishTime>02/07/2020 11:26:19</publishTime>
+      <publishTime>05/21/2020 15:51:08</publishTime>
+    </File>
+    <File Include="Scripts/FixDivGrid.js">
+      <publishTime>05/21/2020 16:25:01</publishTime>
     </File>
     <File Include="Scripts/FloatButton.js">
-      <publishTime>11/04/2019 18:27:53</publishTime>
+      <publishTime>04/11/2019 18:27:53</publishTime>
+    </File>
+    <File Include="Scripts/GridViewScroll.js">
+      <publishTime>11/10/2018 18:26:01</publishTime>
     </File>
     <File Include="Scripts/jquery-1.4.1-vsdoc.js">
       <publishTime>03/01/2017 21:49:52</publishTime>
@@ -259,14 +287,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Styles/FloatButton.css">
       <publishTime>06/11/2019 14:53:02</publishTime>
     </File>
+    <File Include="Styles/GridViewScroll.css">
+      <publishTime>05/21/2020 15:45:59</publishTime>
+    </File>
     <File Include="Styles/Page.css">
-      <publishTime>11/04/2019 18:26:56</publishTime>
+      <publishTime>04/11/2019 18:26:56</publishTime>
     </File>
     <File Include="Styles/Site.css">
       <publishTime>01/03/2017 21:49:52</publishTime>
     </File>
+    <File Include="Styles/web.css">
+      <publishTime>11/10/2018 18:26:01</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>11/28/2019 09:06:41</publishTime>
+      <publishTime>07/31/2022 15:16:35</publishTime>
     </File>
   </ItemGroup>
 </Project>

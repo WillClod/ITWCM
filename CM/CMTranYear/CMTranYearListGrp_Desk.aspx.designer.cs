@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace CM.cm_tran_year_web
+namespace CM.CMTranYear
 {
 
 
-    public partial class cm_tran_year_web
+    public partial class CMTranYearListGrp_Desk
     {
 
         /// <summary>
@@ -51,31 +51,13 @@ namespace CM.cm_tran_year_web
         protected global::System.Web.UI.WebControls.DropDownList cmbTranType;
 
         /// <summary>
-        /// Control srcCMTranType.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranType;
-
-        /// <summary>
-        /// Control srcCMTranTypeYearHeader.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranTypeYearHeader;
-
-        /// <summary>
-        /// Control GridView2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// Control gvwMain.
@@ -87,6 +69,15 @@ namespace CM.cm_tran_year_web
         protected global::System.Web.UI.WebControls.GridView gvwMain;
 
         /// <summary>
+        /// Control gvwMain2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvwMain2;
+
+        /// <summary>
         /// Control srcCMTranTypeYear.
         /// </summary>
         /// <remarks>
@@ -94,5 +85,50 @@ namespace CM.cm_tran_year_web
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranTypeYear;
+
+        /// <summary>
+        /// Control srcCMTranType.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranType;
+
+        /// <summary>
+        /// Control srcCMTranBatchYearGroupGet.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranBatchYearGroupGet;
+
+        /// <summary>
+        /// Control srcCMTranBatchYearTypeGet.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranBatchYearTypeGet;
+
+        /// <summary>
+        /// Control srcCMTranBatchYearGroupTypeGet.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranBatchYearGroupTypeGet;
+
+        /// <summary>
+        /// Control srcCMTranBatch.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource srcCMTranBatch;
     }
 }
