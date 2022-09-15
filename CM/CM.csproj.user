@@ -4,7 +4,7 @@
     <ProjectView>ShowAllFiles</ProjectView>
     <NameOfLastUsedPublishProfile>C:\PROTOTYPE\ITWCM\ITWCM.WebApp\Source\CM\Properties\PublishProfiles\Smarter ASP Net.pubxml</NameOfLastUsedPublishProfile>
     <UseIISExpress>false</UseIISExpress>
-    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />

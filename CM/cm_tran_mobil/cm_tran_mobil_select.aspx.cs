@@ -16,11 +16,9 @@ namespace CM.cm_tran
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            // Set culture.
-            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-Mx");
+            // Set culture.            
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("es-MX");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("es-MX");
-
 
             // If create page.
             if (!IsPostBack)

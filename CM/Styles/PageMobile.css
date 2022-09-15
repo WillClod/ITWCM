@@ -1,0 +1,80 @@
+
+.Template 
+{
+    color: #4238ca;
+    font-weight: bold;
+    /*font-weight: normal*/
+}
+
+.divPageBar 
+{
+    font-family: Arial;
+    font-Size: X-Large;
+    font-weight: bold;
+    color: White;
+    background-color: #0099FF;
+    height: 48px;
+}
+
+.divTitle {
+    text-align: center;
+    padding: 6px;
+}
+
+.divLeft {
+    float: left;
+    text-align: left;
+}
+
+.divCenter {
+    text-align: center;
+}
+
+.divRight {
+    float: right;
+    text-align: right;
+}
+
+.lbl {
+    font-family: Arial;
+    font-Size: large;
+    /*color: #000000;*/
+    color: Gray;
+}
+
+.lblTitle {
+    font-family: Arial;
+    font-Size: X-Large;
+    font-weight: bold;
+    color: White;
+}
+
+.txt
+{
+    font-family: Arial;
+    font-Size: large;
+    color: #000000;
+}
+
+.cmb
+{
+    font-family: Arial;
+    font-Size: large;
+    color: #000000;
+}
+
+.chb {
+    font-family: Arial;
+    font-Size: large;
+    color: #000000;
+}
+
+.btnAlert {
+    font-family: Arial;
+    font-Size: large;
+    background-color: #FF0000;
+    color: White;
+    height: 48px;
+}
+
+

@@ -25,6 +25,9 @@ namespace CM.cm_tran
             //TranTypeValidation
             btnSave.Attributes.Add("onClick", "javascript: return FieldValidation();");
 
+            btnTest.Attributes.Add("onClick", "javascript: return btnTest_OnClick();");
+
+
             // On Create page.
             if (!IsPostBack)
             {
@@ -160,10 +163,19 @@ namespace CM.cm_tran
                 srcCMTranBatch.InsertParameters["tran_desc"].DefaultValue = txtDescription.Text;
                 srcCMTranBatch.InsertParameters["hold_reason"].DefaultValue = txtHoldReason.Text;
                 srcCMTranBatch.InsertParameters["entry_date"].DefaultValue = DateTime.Today.ToString();
+
                 //srcCMTranBatch.InsertParameters["apply_date"].DefaultValue = txtDate.Text;
-                srcCMTranBatch.InsertParameters["apply_date"].DefaultValue = hdnDate.Value;
+                //srcCMTranBatch.InsertParameters["apply_date"].DefaultValue = hdnDate.Value;
+                string vlsApplyDate = Request.Form[hdnDate.UniqueID];
+                srcCMTranBatch.InsertParameters["apply_date"].DefaultValue = vlsApplyDate;
+
+
                 //srcCMTranBatch.InsertParameters["doc_date"].DefaultValue = txtDocDate.Text;
-                srcCMTranBatch.InsertParameters["doc_date"].DefaultValue = hdnDocDate.Value;
+                //srcCMTranBatch.InsertParameters["doc_date"].DefaultValue = hdnDocDate.Value;
+                string vlsDocDate = Request.Form[hdnDocDate.UniqueID];
+                srcCMTranBatch.InsertParameters["doc_date"].DefaultValue = vlsDocDate;
+
+
                 srcCMTranBatch.InsertParameters["hold_flag"].DefaultValue = chbHoldFlag.Checked.ToString();
                 srcCMTranBatch.InsertParameters["post_flag"].DefaultValue = chbPostFlag.Checked.ToString();
                 srcCMTranBatch.InsertParameters["star_flag"].DefaultValue = chbStarFlag.Checked.ToString();
@@ -206,10 +218,16 @@ namespace CM.cm_tran
                 srcCMTranBatch.UpdateParameters["tran_id"].DefaultValue = hdnTranID.Value;
                 srcCMTranBatch.UpdateParameters["tran_desc"].DefaultValue = txtDescription.Text;
                 srcCMTranBatch.UpdateParameters["hold_reason"].DefaultValue = txtHoldReason.Text;
+
                 //srcCMTranBatch.UpdateParameters["apply_date"].DefaultValue = txtDate.Text;
-                srcCMTranBatch.UpdateParameters["apply_date"].DefaultValue = hdnDate.Value;
+                //srcCMTranBatch.UpdateParameters["apply_date"].DefaultValue = hdnDate.Value;
+                string vlsApplyDate = Request.Form[hdnDate.UniqueID];
+                srcCMTranBatch.UpdateParameters["apply_date"].DefaultValue = vlsApplyDate;
+
                 //srcCMTranBatch.UpdateParameters["doc_date"].DefaultValue = txtDocDate.Text;
-                srcCMTranBatch.UpdateParameters["doc_date"].DefaultValue = hdnDocDate.Value;
+                //srcCMTranBatch.UpdateParameters["doc_date"].DefaultValue = hdnDocDate.Value;
+                string vlsDocDate = Request.Form[hdnDocDate.UniqueID];
+                srcCMTranBatch.UpdateParameters["doc_date"].DefaultValue = vlsDocDate;
 
                 // If no transafer transaction.
                 if (hdnTranClass.Value != "13210")
@@ -246,23 +264,6 @@ namespace CM.cm_tran
             }
         }
 
-        protected void btnDelete_Click(object sender, ImageClickEventArgs e)
-        {
-            // Delete transaction.                                
-            srcCMTranBatch.DeleteParameters["tran_id"].DefaultValue = hdnTranID.Value;
-
-            try
-            {
-                srcCMTranBatch.Delete();
-            }
-            catch (Exception x)
-            {
-                pcvAlert(x.Message);
-                return;
-            }
-            
-            Server.Transfer("cm_tran_mobil_select.aspx?DocDate=" + hdnDate.Value);
-        }
 
         protected void cmbTranType_DataBound(object sender, EventArgs e)
         {
@@ -312,6 +313,39 @@ namespace CM.cm_tran
         protected void btnBack_Click(object sender, ImageClickEventArgs e)
         {
 
+        }
+
+        protected void btnNext_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void btnPrior_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            // Delete transaction.                                
+            srcCMTranBatch.DeleteParameters["tran_id"].DefaultValue = hdnTranID.Value;
+
+            try
+            {
+                srcCMTranBatch.Delete();
+            }
+            catch (Exception x)
+            {
+                pcvAlert(x.Message);
+                return;
+            }
+
+            Server.Transfer("cm_tran_mobil_select.aspx?DocDate=" + hdnDate.Value);
         }
     }
 }

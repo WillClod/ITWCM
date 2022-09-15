@@ -1,18 +1,71 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cm_tran_mobil_select.aspx.cs" Inherits="CM.cm_tran.cm_tran_select" EnableEventValidation="false" %>
 
-<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
-
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    
+    <title>ITW Tran Select</title>
+
+    <!-- Mobile layout -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="..\Styles\FloatButton.css"/>
+
+    <!-- Page Style -->     
+    <link href="~/Styles/PageMobile.css" rel="Stylesheet" type="text/css"/>
+
+    <!-- Fix Divs -->        
+    <script src="~/Scripts/FixDiv.js" type="text/javascript"></script>	
+    <link href="~/Styles/FixDiv.css" rel="Stylesheet" type="text/css"/>
+
+    <!-- FloatButtons -->
+    <link rel="stylesheet" href="~\Styles\FloatButton.css"/>
+    <script type="text/javascript" src="~\Scripts\FloatButton.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>       
+    <script type="text/javascript">
+    
+        // Set bootstrap datepicker to date field.
+        $(function () {
+            $("#txtDate").datepicker({
+                language: 'es',
+                format: "D dd/M/yyyy"
+            });
+        });
+
+        // Detect date selected to postback action.
+        $(document).ready(function () {
+
+            $("#txtDate").datepicker({
+                todayBtn: 1,
+                autoclose: true,
+            }).on('changeDate', function (selected) {
+
+                var vldSelectedDate = new Date(selected.date.valueOf());
+
+                var vlsSelectedDate =
+                    vldSelectedDate.getFullYear() +
+                    "/" + ("0" + (vldSelectedDate.getMonth() + 1)).slice(-2) +
+                    "/" + ("0" + vldSelectedDate.getDate()).slice(-2) +
+                    " " + ("0" + vldSelectedDate.getHours()).slice(-2) +
+                    ":" + ("0" + vldSelectedDate.getMinutes()).slice(-2);
+
+                //alert(vlsSelectedDate);
+
+                //var txtClientID = '<%= txtDate.ClientID %>';
+                __doPostBack("DateSelected", vlsSelectedDate);
+            });
+        });
+        
+    </script>
+
 </head>
 
-    <script type="text/javascript" src="..\Scripts\FloatButton.js"></script>
-    <script type="text/javascript" lang="javascript" >
+<script type="text/javascript" lang="javascript" >
         function EventSelectedDate(sender, args) {
          //var txtClientID = '<%= txtDate.ClientID %>';
             //__doPostBack("DateSelected", document.getElementById(txtClientID).value);
@@ -35,7 +88,26 @@
     <form id="form1" runat="server">
 
     <!-- Header. -->
-    <div id="divHeader" style="margin-bottom: 10px" >
+    <div id="divHeader" class="divHeader" style="margin-bottom: 10px" >
+                   
+        <div id="divPageBar" class="divPageBar">
+
+               <div id="divLeftButton" class="divLeft">
+                   <asp:ImageButton ID="btnBack" runat="server" 
+                        ImageUrl="~/Images/Back48.png" Visible="False" ToolTip="Regresar" />
+               </div>
+
+               <div id="divRigthButton" class="divRight">
+                   <asp:ImageButton ID="btnNew" runat="server" 
+                        ImageUrl="~/Images/New48.png" Visible="False" ToolTip="Nuevo" />
+               </div>
+                            
+               <div id="divTitle" class="divTitle">
+                   <asp:Label ID="lblTitle" class="lblTitle" runat="server" Text="Registros de Efectivo"></asp:Label>
+               </div>
+
+        </div>
+
         <div id="divHeader-Buttons">
             <div style="float: left">
                 <asp:ImageButton ID="btnPrior" runat="server" 
@@ -73,14 +145,11 @@
                         </td>
 
                         <td>
-                    <asp:TextBox ID="txtDate" runat="server" style="text-align:left; margin-bottom: 0px;"
+                    <asp:TextBox ID="txtDate" class="txt" runat="server" style="text-align:left; margin-bottom: 0px;"
                     ReadOnly="True" Font-Bold="True" 
-                    Font-Size="Large" BorderStyle="None" 
-                    Font-Names="Arial" Width="150px">vier 23/Dic/2012</asp:TextBox>
-                <asp:CalendarExtender ID="txtDate_CalendarExtender" runat="server" 
-                    TargetControlID="txtDate" Format="ddd dd/MMM/yyyy"                 
-                    OnClientDateSelectionChanged="EventSelectedDate" PopupButtonID="txtDate"
-                    ></asp:CalendarExtender>    
+                    BorderStyle="None" 
+                    Width="150px">vier 23/Dic/2012</asp:TextBox> 
+
                         </td>
                         <td>
                 <asp:ImageButton ID="btnPastFlag" runat="server"  
@@ -122,10 +191,11 @@ ORDER BY tran_class DESC, tran_type_desc ">
                 </asp:SqlDataSource>
                 
         </div>
+
     </div>
 
     <!-- Body -->
-    <div id="divBody">                        
+    <div id="divBody" class ="divBody">                        
         <div >
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
             Height="100%" Width="100%" DataSourceID="srcCMTranBatch" 
@@ -207,15 +277,15 @@ ORDER BY tran_class DESC, tran_type_desc ">
         <div id="container-floating">            
             <div class="nd4 nds" data-toggle="tooltip" data-placement="left" data-original-title="Transferencia">
                 <asp:ImageButton ID="ImageButton3" runat="server" class="nd-aspx" 
-                    ImageUrl="~/Images/TransferIcon.png" OnClick="btnRevenue_Click" BorderStyle="None" />    
+                    ImageUrl="~/Images/Transfer32.png" OnClick="btnRevenue_Click" BorderStyle="None" />    
             </div>
             <div class="nd3 nds" data-toggle="tooltip" data-placement="left" data-original-title="Ingreso">
                 <asp:ImageButton ID="ImageButton1" runat="server" class="nd-aspx" 
-                    ImageUrl="~/Images/RevenueIcon.png" OnClick="btnTransfer_Click" BorderStyle="None" />    
+                    ImageUrl="~/Images/Plus32.png" OnClick="btnTransfer_Click" BorderStyle="None" />    
             </div>
             <div class="nd1 nds" data-toggle="tooltip" data-placement="left" data-original-title="Gasto" style="vertical-align: middle; text-align: center;">
                 <asp:ImageButton ID="ImageButton2" runat="server" class="nd-aspx"  
-                    ImageUrl="~/Images/ExpenseIcon.png" OnClick="btnExpense_Click" BorderStyle="None" ImageAlign="Middle" />    
+                    ImageUrl="~/Images/Minus32.png" OnClick="btnExpense_Click" BorderStyle="None" ImageAlign="Middle" />    
             </div>
             <div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" onclick="newmail()">
                 <p class="plus">+</p>
@@ -226,7 +296,7 @@ ORDER BY tran_class DESC, tran_type_desc ">
     </div>
 
     <!-- Footer -->
-    <div id="divFooter" style="margin: 10px 0px 0px 0px">     
+    <div id="divFooter" class ="divFooter" style="margin: 10px 0px 0px 0px">     
         <div id="divFooter-Totals" style="height: 52px" >                           
             <div align="center">
             <asp:Label ID="lblTotalAmt" runat="server" Text="0.00" Font-Names="Arial Black" Font-Size="XX-Large" Font-Bold="True"></asp:Label>
@@ -259,8 +329,6 @@ ORDER BY tran_class DESC, tran_type_desc ">
     <asp:HiddenField ID="hdnPostFlag" runat="server" Value="false" />
 
     <asp:HiddenField ID="hdnPastFlag" runat="server" Value="true" />
-    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" 
-                EnableScriptGlobalization="True"></asp:ToolkitScriptManager>
     
     <asp:SqlDataSource ID="srcCMTranBatchRange" runat="server" 
             ConnectionString="<%$ ConnectionStrings:IntelywareConnectionString %>" SelectCommand="SELECT TR.tran_id, TR.comp_id, TR.tran_num, TR.tran_desc, TR.entry_date, TR.doc_date, TR.post_date, TR.post_flag, TR.user_id, CASE WHEN TR.tran_class &lt;&gt; 13210 THEN TR.tran_type ELSE TR.tran_type + '-' + TR.trsf_tran_type END AS tran_type, TY.tran_type_desc, TR.cash_acct_code, C.cash_acct_desc, CASE WHEN TR.tran_class &lt;&gt; 13210 THEN SUBSTRING(C.cash_acct_desc , 1 , 4) ELSE SUBSTRING(C.cash_acct_desc , 1 , 4) + '-' + SUBSTRING(CT.cash_acct_desc , 1 , 4) END AS cash_acct_descr, CASE TY.tran_class WHEN 13110 THEN TR.tran_amt * - 1 ELSE TR.tran_amt END AS tran_amt, TR.tran_class, TR.apply_date, TY.severity_class, TR.star_flag, TR.hold_reason FROM cmtranbatch AS TR INNER JOIN cmtrantype AS TY ON TY.comp_id = TR.comp_id AND TY.tran_type = TR.tran_type INNER JOIN cmcash AS C ON C.comp_id = TR.comp_id AND C.cash_acct_code = TR.cash_acct_code LEFT OUTER JOIN cmcash AS CT ON CT.comp_id = TR.comp_id AND CT.cash_acct_code = TR.trsf_cash_acct_code WHERE (TR.apply_date BETWEEN @from_apply_date AND @to_apply_date) AND (TR.post_flag = @post_flag) 
