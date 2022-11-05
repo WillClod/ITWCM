@@ -1,24 +1,77 @@
 
-.Template 
-{
+.Template {
     color: #4238ca;
     font-weight: bold;
     /*font-weight: normal*/
 }
 
-.divPageBar 
-{
+.divPageBar {
     font-family: Arial;
     font-Size: X-Large;
     font-weight: bold;
     color: White;
     background-color: #0099FF;
     height: 48px;
+    clear: both;
 }
 
 .divTitle {
     text-align: center;
     padding: 6px;
+}
+
+.divRow {
+    clear: both;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.divRow11 {
+    text-align: center;
+    margin-bottom: 10px;
+    /*border: 1px solid #FF00FF;*/
+}
+
+.divRow21 {
+    float: left;
+    text-align: left;
+    width: 49%;
+    margin-bottom: 10px;
+    /*border: 1px solid #0000FF;*/
+}
+
+.divRow22 {
+    float: right;
+    text-align: right;
+    width: 49.5%;
+    margin-bottom: 10px;
+    /*border: 1px solid #FF00FF;*/
+}
+
+.divRow31 {
+    float: left;
+    text-align: left;
+    width: 32%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    /*border: 0px solid #00FF00;*/
+}
+
+.divRow32 {
+    float: left;
+    text-align: left;
+    width: 32%;
+    margin-bottom: 10px;
+    /* border: 0px solid #FF00FF;*/
+}
+
+.divRow33 {
+    float: right;
+    text-align: right;
+    width: 32.5%;
+    margin-bottom: 10px;
+    /*border: 0px solid #0000FF;*/
 }
 
 .divLeft {
@@ -40,6 +93,8 @@
     font-Size: large;
     /*color: #000000;*/
     color: Gray;
+    text-align: left;
+    width: 100%;
 }
 
 .lblTitle {
@@ -47,17 +102,17 @@
     font-Size: X-Large;
     font-weight: bold;
     color: White;
+    width: 100%;
 }
 
-.txt
-{
+.txt {
     font-family: Arial;
     font-Size: large;
     color: #000000;
+    width: 100%;
 }
 
-.cmb
-{
+.cmb {
     font-family: Arial;
     font-Size: large;
     color: #000000;
@@ -76,5 +131,3 @@
     color: White;
     height: 48px;
 }
-
-

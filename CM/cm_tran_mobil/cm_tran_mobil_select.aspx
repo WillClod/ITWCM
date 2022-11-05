@@ -195,7 +195,7 @@ ORDER BY tran_class DESC, tran_type_desc ">
     </div>
 
     <!-- Body -->
-    <div id="divBody" class ="divBody">                        
+    <div id="divBody" class ="divBody" onscroll="fgvDivRepplyScroll('divBody', 'divHeader')" >                        
         <div >
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
             Height="100%" Width="100%" DataSourceID="srcCMTranBatch" 

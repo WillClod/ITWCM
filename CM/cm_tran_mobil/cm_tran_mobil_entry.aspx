@@ -221,13 +221,13 @@
 
        </div>
 
-       <div id="divBody" class ="divBody" style="margin-top: 10px; margin-left: 10px" >
+       <div id="divBody" class ="divBody" onscroll="fgvDivRepplyScroll('divBody', 'divHeader')">
 
-            <div id="divDates" style="margin-bottom: 10px; height: 50px;">
+            <div id="divDates" class="divRow">
        
-                <div id="divApplyDate" class="divLeft"> 
+                <div id="divApplyDate" class="divRow21"> 
                     <div>                      
-                        <asp:Label ID="lblDate" class="lbl" runat="server" Text="Fecha Aplicación"></asp:Label>
+                        <asp:Label ID="lblDate" class="lbl" runat="server" Text="Fecha Aplicación" Width="100%"></asp:Label>
                     </div>
                     <div>
                         <asp:TextBox ID="txtDate" class="txt" runat="server" style="text-align:left"
@@ -237,8 +237,8 @@
                     </div>
                 </div>
 
-                <div id="divDocDate" class="divRight">
-                    <div>                        
+                <div id="divDocDate" class="divRow22">
+                    <div style="text-align: right">                        
                         <asp:Label ID="lblDocDate" class="lbl" runat="server" Text="Fecha Documento"></asp:Label>
                     </div>
                     <div>  
@@ -252,9 +252,9 @@
                 </div>
             </div>
 
-            <div id="divAmount">   
-                <div align="left">   
-                    <asp:Label ID="lblTranAmt" class="lbl" runat="server" Text="Monto"></asp:Label> 
+            <div id="divAmount" class="divRow">   
+                <div>   
+                    <asp:Label ID="lblTranAmt" class="lbl" runat="server" Text="Monto" Width="100%"></asp:Label> 
                 </div>
                 <div>
                     <asp:TextBox ID="txtTranAmt" class="txt" runat="server" Width="100%" 
@@ -262,9 +262,9 @@
                 </div>
             </div>
 
-            <div id="divType" style="margin: 10px 0px 0px 0px">   
+            <div id="divType" class="divRow">   
                 <div>   
-                    <asp:Label ID="lblTranType" class="lbl" runat="server" Text="Tipo Transacción"></asp:Label> 
+                    <asp:Label ID="lblTranType" class="lbl" runat="server" Text="Tipo Transacción" Width="100%"></asp:Label> 
                 </div>
                 <div>                
                     <asp:DropDownList ID="cmbTranType" class="cmb" runat="server" Width="100%" 
@@ -286,7 +286,7 @@
                 </div>
             </div>
 
-            <div id="divCashAccount" style="margin: 10px 0px 0px 0px">   
+            <div id="divCashAccount" class="divRow">   
                 <div>   
                     <asp:Label ID="lblCashAcct" class="lbl" runat="server" Text="Cuenta Banco"></asp:Label> 
                 </div>
@@ -305,7 +305,7 @@
                 </div>
             </div>
 
-            <div id="divTrsfCashAcct" style="margin: 10px 0px 0px 0px">   
+            <div id="divTrsfCashAcct" class="divRow">   
                 <div>   
                     <asp:Label ID="lblTrsfCashAcct" class="lbl" runat="server" Text="Cuenta Banco Entrada"  
                         Visible="False"></asp:Label> 
@@ -332,7 +332,7 @@
                 </div>
             </div>
 
-            <div id="divDescription" style="margin: 10px 0px 0px 0px">   
+            <div id="divDescription" class="divRow">   
                 <div>   
                     <asp:Label ID="lblDesc" class="lbl" runat="server" Text="Descripción"></asp:Label> 
                 </div>
@@ -341,7 +341,7 @@
                 </div>
             </div>
 
-            <div id="divHoldReason" style="margin: 10px 0px 0px 0px">   
+            <div id="divHoldReason" class="divRow">   
                 <div>   
                     <asp:Label ID="lblHoldReason" class="lbl" runat="server" Text="Razón de Retención"></asp:Label> 
                 </div>
@@ -351,7 +351,7 @@
                 </div>
             </div>
 
-            <div id="divFlags" style="margin: 10px 0px 0px 0px">
+            <div id="divFlags" class="divRow">
 
                 <!-- Post Flag -->
                 <div id= "divPostFlag" class="divRight">  
@@ -385,7 +385,7 @@
 
             </div>
 
-            <div id="divButtons" style="margin: 40px 0px 0px 0px">
+            <div id="divButtons" class="divRow">
 
                 <div class="divLeft">
                     
